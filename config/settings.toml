@@ -1,0 +1,70 @@
+# URL or device index/path for the camera feed.
+# For Windows: Use device index, e.g., "0", "1", etc.
+# For Linux or macOS: Use device path, e.g., "/dev/video0", "/dev/video1", etc.
+camera_url = "0"
+
+# Kernel size for Gaussian blur preprocessing (must be an odd number).
+blur_kernel_size = 5
+
+# Standard deviation for Gaussian blur preprocessing.
+blur_sigma = 1.0
+
+# Number of history frames for background subtraction.
+history_frames = 100
+
+# Variance threshold for background subtraction.
+var_threshold = 16.0
+
+# Whether to detect shadows during background subtraction (true/false).
+detect_shadows = false
+
+# Learning rate for background subtraction (-1.0 for automatic).
+learning_rate = -1.0
+
+# Threshold for converting the foreground mask to a binary image.
+binary_threshold = 128.0
+
+# X-coordinate of the region of interest's top-left corner.
+roi_x = 100
+
+# Y-coordinate of the region of interest's top-left corner.
+roi_y = 100
+
+# Width of the region of interest.
+roi_width = 200
+
+# Height of the region of interest.
+roi_height = 200
+
+# Threshold for detecting a free parking space based on the proportion of white pixels in the region of interest.
+detection_threshold = 0.1
+
+# URL to send an HTTP request to when a free parking space is detected.
+alert_url = "https://example.com/alert"
+
+# Address of the SMTP server for sending alert emails.
+smtp_server = "smtp.example.com"
+
+# Username for the SMTP server.
+smtp_username = "username"
+
+# Password for the SMTP server.
+smtp_password = "password"
+
+# Sender email address for alert emails.
+email_from = "noreply@example.com"
+
+# Recipient email address for alert emails.
+email_to = "user@example.com"
+
+# Subject of the alert email.
+email_subject = "Free Parking Space Detected"
+
+# Body of the alert email.
+email_body = "A free parking space has been detected in your yard!"
+
+# Path to the sound file to play as a sound notification.
+sound_file_path = "../assets/alert_sound.wav"
+
+# Timeout value in ms.
+detection_interval_ms = 360000
