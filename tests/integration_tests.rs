@@ -11,7 +11,7 @@ use tokio::sync::Mutex;
 #[tokio::test]
 async fn test_integration() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../config/settings.toml").unwrap();
 
     // Initialize the camera.
     let mut camera = camera::Camera::new(&config).unwrap();

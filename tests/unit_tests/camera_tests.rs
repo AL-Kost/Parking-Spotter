@@ -5,7 +5,7 @@ use opencv::core;
 #[test]
 fn test_camera_initialization() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the camera.
     let camera_result = camera::Camera::new(&config);
@@ -18,7 +18,7 @@ fn test_camera_initialization() {
 #[test]
 fn test_camera_capture_frame() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the camera.
     let mut camera = camera::Camera::new(&config).unwrap();
@@ -43,7 +43,7 @@ fn test_camera_capture_frame() {
 #[test]
 fn test_camera_properties() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the camera.
     let mut camera = camera::Camera::new(&config).unwrap();

@@ -10,7 +10,7 @@ use tokio::time::sleep;
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Read configuration settings from the config file
-    let config = utils::Config::from_file("config/settings.toml")?;
+    let config = utils::Config::from_file("../config/settings.toml")?;
 
     // Initialize the camera
     let mut camera = camera::Camera::new(&config)?;

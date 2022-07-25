@@ -1,5 +1,3 @@
-// tests/unit_tests/alert_system_tests.rs
-
 use parking_space_detector::alert_system;
 use parking_space_detector::utils;
 
@@ -7,7 +5,7 @@ use parking_space_detector::utils;
 #[test]
 fn test_alert_system_init() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the alert system.
     let alert_system_result = alert_system::AlertSystem::new(&config);
@@ -23,7 +21,7 @@ fn test_alert_system_init() {
 #[test]
 fn test_send_email_alert() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the alert system.
     let mut alert_system = alert_system::AlertSystem::new(&config).unwrap();
@@ -42,7 +40,7 @@ fn test_send_email_alert() {
 #[test]
 fn test_play_sound_notification() {
     // Load the configuration file.
-    let config = utils::Config::from_file("config/settings.toml").unwrap();
+    let config = utils::Config::from_file("../../config/settings.toml").unwrap();
 
     // Initialize the alert system.
     let mut alert_system = alert_system::AlertSystem::new(&config).unwrap();
