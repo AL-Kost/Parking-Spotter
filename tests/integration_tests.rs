@@ -1,5 +1,3 @@
-// tests/integration_tests.rs
-
 use parking_space_detector::{
     camera, video_processing, parking_space_detection, alert_system, utils,
 };
