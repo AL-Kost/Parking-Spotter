@@ -19,7 +19,7 @@ async fn test_integration() {
 
     // Wrap the alert system in an Arc<Mutex<>> to share it safely across threads.
     let alert_system = Arc::new(Mutex::new(
-        alert_system::AlertSystem::new(&config).unwrap(),
+        alert_system::AlertSystem::new(&config).unwrap()
     ));
 
     // Capture a frame from the camera.

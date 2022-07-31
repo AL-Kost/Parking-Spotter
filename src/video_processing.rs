@@ -18,7 +18,7 @@ pub fn preprocess_frame(frame: &core::Mat, config: &crate::utils::Config) -> Res
         Size::new(config.blur_kernel_size, config.blur_kernel_size),
         config.blur_sigma,
         config.blur_sigma,
-        0,
+        0
     )?;
 
     Ok(blurred_frame)

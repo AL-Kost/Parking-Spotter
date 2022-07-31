@@ -13,7 +13,7 @@ use tokio::time::sleep;
 
 pub struct AlertSystem {
     config: crate::utils::Config,
-    smtp_transport: AsyncSmtpTransport<Tokio02Connector>,
+    smtp_transport: AsyncSmtpTransport<Tokio02Connector>
 }
 
 impl AlertSystem {

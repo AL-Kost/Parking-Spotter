@@ -6,7 +6,7 @@ use opencv::{
 use std::error::Error;
 
 pub struct Camera {
-    capture: videoio::VideoCapture,
+    capture: videoio::VideoCapture
 }
 
 impl Camera {

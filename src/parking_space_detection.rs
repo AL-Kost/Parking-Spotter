@@ -7,7 +7,7 @@ use std::error::Error;
 
 pub struct ParkingSpaceDetector {
     background_subtractor: video::BackgroundSubtractorMOG2,
-    detection_threshold: f64,
+    detection_threshold: f64
 }
 
 impl ParkingSpaceDetector {
@@ -15,7 +15,7 @@ impl ParkingSpaceDetector {
         let background_subtractor = video::BackgroundSubtractorMOG2::create(
             config.history_frames,
             config.var_threshold,
-            config.detect_shadows,
+            config.detect_shadows
         )
             .unwrap();
 
@@ -23,7 +23,7 @@ impl ParkingSpaceDetector {
 
         Self {
             background_subtractor,
-            detection_threshold,
+            detection_threshold
         }
     }
 
